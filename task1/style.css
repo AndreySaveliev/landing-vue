@@ -1,0 +1,25 @@
+@import url(./normalize.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "circe";
+  src: url(./src/fonts/Circe-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: circe;
+  src: url(./src/fonts/Circe-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: light;
+}
+
+@font-face {
+  font-family: circe;
+  src: url(./src/fonts/Circe-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: bold;
+}

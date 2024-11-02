@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="w-scren h-screen">
+    <header
+      class="flex min-h-screen flex-col bg-[url('./src/bg-city.png')] bg-cover bg-center bg-no-repeat pt-4 mobile:min-h-[550px]"
+    >
+      <div
+        class="mx-auto flex h-full items-start justify-between mobile:flex-col tablet:gap-10 desktop:w-2/3 desktop:flex-row"
+      >
+        <div class="flex items-center gap-7 tablet:gap-2">
+          <a
+            class="rounded-2xl bg-pink px-7 py-1.5 font-circe font-normal text-white"
+            >Личный кабинет</a
+          >
+          <a class="font-circe font-bold">Каталок услуг</a>
+        </div>
+        <button class="flex items-center gap-2">
+          <img src="./src/icon.svg" />
+          <a class="font-circe font-bold text-pink">Онлайн помощник</a>
+        </button>
+      </div>
+      <div class="mx-auto mt-10 flex flex-col gap-12 desktop:w-2/3">
+        <img src="./src/my-bis.svg" class="w-52" />
+        <h1
+          class="font-circe font-normal mobile:w-[250px] tablet:w-[320px] tablet:text-2xl desktop:w-[400px] desktop:text-3xl"
+        >
+          Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать
+          свой бизнес
+        </h1>
+      </div>
+    </header>
+    <section
+      class="mx-auto mb-40 flex flex-col items-center gap-12 bg-[url('./src/gb-gray.png')] bg-cover bg-center pb-20 pt-20"
+    >
+      <h2 class="text-center font-circe text-2xl font-bold desktop:w-[552px]">
+        Для начала работы ответьте на вопрос, есть ли у вас уже существующий
+        бизнес?
+      </h2>
+      <div class="flex gap-7 mobile:flex-col desktop:flex-row">
+        <button
+          class="w-[337px] rounded-3xl bg-pink py-3 font-circe text-xl font-normal text-white mobile:w-[250px] mobile:px-2"
+        >
+          Да, у меня уже есть бизнес
+        </button>
+        <button
+          class="w-[337px] rounded-3xl bg-blue py-3 font-circe text-xl font-normal text-white mobile:w-[250px] mobile:px-3"
+        >
+          Нет, но планирую открыть
+        </button>
+      </div>
+    </section>
+    <section
+      class="mx-auto flex flex-col items-center tablet:mb-40 desktop:mb-60"
+    >
+      <h2 class="mb-20 font-circe text-4xl font-bold">Преимущества</h2>
+      <div
+        class="flex w-screen flex-col mobile:mb-8 mobile:gap-5 desktop:flex-row desktop:justify-center desktop:gap-24"
+      >
+        <div class="flex flex-col items-center">
+          <img src="./src/org-img.png" />
+          <p class="font-circe text-5xl font-bold text-blue">482</p>
+          <p class="w-60 text-center font-circe">
+            Организаций поддержки по Российской Федерации
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/phone-img.png" />
+          <p class="font-circe text-5xl font-bold text-blue">5240</p>
+          <p class="w-60 text-center font-circe">
+            Оказано услуг государственной поддержки
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./src/people-img.png" />
+          <p class="font-circe text-5xl font-bold text-blue">1360</p>
+          <p class="w-60 text-center font-circe">
+            Зарегестрировано участников проекта
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="mx-auto flex flex-col items-center mobile:gap-5 tablet:w-[740px]"
+    >
+      <h2 class="mb-20 font-circe text-4xl font-bold mobile:mb-5">
+        Истории успеха
+      </h2>
+      <div
+        class="mx-auto flex flex-row items-center gap-24 mobile:flex-col mobile:gap-3 tablet:gap-3 desktop:max-w-[1000px]"
+      >
+        <img src="./src/backery.png" class="w-80" />
+        <div class="flex flex-col">
+          <h3 class="mb-5 font-circe text-2xl font-bold">
+            Пекарня “Русские традиции”
+          </h3>
+          <div class="mb-4 flex flex-row items-center gap-5">
+            <img src="./src/arrow.png" class="h-8 w-11" />
+            <p class="font-circe text-base font-bold text-pink">
+              Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что
+              такое русская кухня», «обьяснить, что она жива».
+            </p>
+          </div>
+          <p class="mb-4 font-circe text-base font-normal">
+            Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие
+            расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта.
+          </p>
+          <button class="self-start rounded-3xl bg-blue px-6 py-3 text-white">
+            Читать историю
+          </button>
+        </div>
+      </div>
+      <div
+        class="mx-auto flex flex-row-reverse items-center gap-24 mobile:flex-col mobile:gap-3 tablet:gap-3 desktop:max-w-[1000px]"
+      >
+        <img src="./src/mechanic.png" class="w-80" />
+        <div class="flex flex-col">
+          <h3 class="mb-5 font-circe text-2xl font-bold">Автомастерская</h3>
+          <div class="mb-4 flex flex-row items-center gap-5">
+            <img src="./src/arrow.png" class="h-8 w-11" />
+            <p class="font-circe text-base font-bold text-pink">
+              Первые дни независимости. Когда не нужно рано вставать, когда не
+              нужно отпрашиваться, что бы успеть съездить в магазин, когда
+              удобно.
+            </p>
+          </div>
+          <p class="mb-4 font-circe text-base font-normal">
+            Встреча в городе Н с моими будущими партнерами была плодотворной. Я
+            не смог заснуть до пяти утра – не потому что не спалось, но потому
+            что мысли о будущих перспективах просто взрывали мой мозг.
+          </p>
+          <button class="self-start rounded-3xl bg-blue px-6 py-3 text-white">
+            Читать историю
+          </button>
+        </div>
+      </div>
+      <div
+        class="mx-auto flex flex-row items-center gap-24 mobile:flex-col mobile:gap-3 tablet:gap-3 desktop:max-w-[1000px]"
+      >
+        <img src="./src/beauty.png" class="w-80" />
+        <div class="flex flex-col">
+          <h3 class="mb-5 font-circe text-2xl font-bold">
+            Салон красоты “Эмират”
+          </h3>
+          <div class="mb-4 flex flex-row items-center gap-5">
+            <img src="./src/arrow.png" class="h-8 w-11" />
+            <p class="font-circe text-base font-bold text-pink">
+              Когда же появилась возможность открыть свой бизнес, я
+              рассматривала различные варианты, изучала всевозможные
+              направления.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="mx-auto flex flex-col items-center bg-[url('./src/bg-gray-180.png')] bg-cover bg-center bg-no-repeat pt-12"
+    >
+      <h2 class="mb-2 font-circe text-4xl font-bold">Есть вопросы?</h2>
+      <p class="mb-8 w-64 text-center font-circe text-base font-normal">
+        Задайте интересующие вас вопросы онлайн помощнику
+      </p>
+      <button
+        class="mb-16 flex items-center gap-2 rounded-[50px] bg-pink px-12 py-2"
+      >
+        <img src="./src/icon.svg" />
+        <p class="align-middle font-circe font-bold text-white">
+          Онлайн помощник
+        </p>
+      </button>
+    </section>
+    <footer
+      class="mx-auto flex justify-center gap-32 bg-darkGray py-7 mobile:flex-col mobile:gap-4 tablet:gap-8 desktop:flex-row"
+    >
+      <ul
+        class="flex list-none gap-11 mobile:flex-col mobile:items-center mobile:gap-2 tablet:gap-3 desktop:flex-row"
+      >
+        <li class="font-circe text-base font-bold text-white">
+          Услуги и поддержка
+        </li>
+        <li class="font-circe text-base font-bold text-white">
+          Сервисы для бизнеса
+        </li>
+        <li class="font-circe text-base font-bold text-white">
+          Общая информация
+        </li>
+        <li class="font-circe text-base font-bold text-white">
+          Защита бизнеса
+        </li>
+      </ul>
+      <div
+        class="flex list-none gap-11 mobile:flex-col mobile:items-center mobile:gap-3 tablet:flex-col tablet:gap-2 desktop:flex-row"
+      >
+        <p class="min-w-max font-circe text-base font-bold text-white">
+          service@in-line.ru
+        </p>
+        <p class="min-w-max font-circe text-base font-bold text-white">
+          8-800-200-74-30
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
