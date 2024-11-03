@@ -2,7 +2,7 @@
   <AuthForm :email :pass :login :error :isLoading />
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import AuthForm from "./../components/AuthForm.vue";
 import { useRouter } from "vue-router";
 
@@ -12,10 +12,6 @@ const error = ref(false);
 const isLoading = ref(false);
 const router = useRouter();
 import { store } from "./../store/store.js";
-
-// логика авторизации.
-// но из за того как работает API
-// не все поля нам нужны
 
 const login = async (login, pass) => {
   isLoading.value = true;
@@ -27,11 +23,12 @@ const login = async (login, pass) => {
       password: pass,
     }),
   });
-  console.log(res);
   if (res.ok) {
     const data = await res.json();
-    store.user = data;
+    Object.assign(store.user, data);
+    localStorage.setItem("accessToken", data.accessToken);
     router.push("/profile");
+    console.log(store.user);
     isLoading.value = false;
   } else if (res.status == 400) {
     error.value = true;

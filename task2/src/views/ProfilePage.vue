@@ -26,6 +26,7 @@
 import { store } from "./../store/store.js";
 import Popup from "./../components/Popup.vue";
 import { ref, onMounted } from "vue";
+
 const showpopup = ref(false);
 
 const handleOpenPopup = () => {
@@ -33,17 +34,18 @@ const handleOpenPopup = () => {
 };
 
 const handleClosePopup = () => {
-  console.log("lolol zakrit");
   showpopup.value = false;
 };
 
 onMounted(() => {
   const getUserData = async () => {
+    console.log("lol");
     const res = await fetch("https://dummyjson.com/users/2");
-    if (res.ok) {
+    if (res.status == 200) {
       const response = await res.json();
-      store.user = response;
-      console.log(store.user);
+      console.log(response);
+      Object.assign(store.user, response);
+      console.log(store.user, "user");
     }
   };
   getUserData();
